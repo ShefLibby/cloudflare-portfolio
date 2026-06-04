@@ -2,3 +2,6 @@ name = "libby-portfolio"
 pages_build_output_dir = ".output/public"
 compatibility_date = "2024-11-01"
 compatibility_flags = ["nodejs_compat"]
+
+[build]
+command = "bun install && bun run build"
