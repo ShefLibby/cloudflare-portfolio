@@ -675,6 +675,79 @@ function Portfolio() {
           <p>© 2025 · Grand Valley State University</p>
         </div>
       </footer>
+
+      {/* PROJECT DIALOG */}
+      <Dialog
+        open={openProject !== null}
+        onOpenChange={(o) => !o && setOpenProject(null)}
+      >
+        <DialogContent className="max-w-2xl p-0 overflow-hidden">
+          {openProject !== null && (
+            <div className="animate-in fade-in zoom-in-95 duration-300">
+              <div
+                className={`relative h-48 bg-gradient-to-br ${PROJECTS[openProject].accent} border-b border-border`}
+              >
+                <div className="absolute inset-0 grid-bg opacity-40" />
+                <div className="absolute inset-0 flex items-end p-6">
+                  <div>
+                    <p className="text-xs uppercase tracking-[0.25em] text-muted-foreground font-mono">
+                      0{openProject + 1} · {PROJECTS[openProject].timeline}
+                    </p>
+                    <p className="mt-1 text-sm text-muted-foreground">
+                      {PROJECTS[openProject].role}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="p-6 sm:p-8 max-h-[60vh] overflow-y-auto">
+                <DialogHeader>
+                  <DialogTitle className="text-2xl font-bold leading-snug">
+                    {PROJECTS[openProject].title}
+                  </DialogTitle>
+                </DialogHeader>
+
+                <div className="mt-5 flex flex-wrap gap-1.5">
+                  {PROJECTS[openProject].tags.map((t) => (
+                    <span
+                      key={t}
+                      className="text-[11px] px-2.5 py-1 rounded-full bg-secondary text-secondary-foreground border border-border"
+                    >
+                      {t}
+                    </span>
+                  ))}
+                </div>
+
+                <div className="mt-6 space-y-4 text-sm text-muted-foreground leading-relaxed">
+                  {PROJECTS[openProject].details.map((d, idx) => (
+                    <p key={idx}>{d}</p>
+                  ))}
+                </div>
+
+                <div className="mt-7">
+                  <p className="text-xs uppercase tracking-wider text-accent font-semibold">
+                    Highlights
+                  </p>
+                  <ul className="mt-3 grid sm:grid-cols-2 gap-2">
+                    {PROJECTS[openProject].highlights.map((h) => (
+                      <li
+                        key={h}
+                        className="flex items-start gap-2 text-sm rounded-xl border border-border bg-secondary/50 px-3 py-2"
+                      >
+                        <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-accent shrink-0" />
+                        {h}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <p className="mt-6 text-xs text-muted-foreground italic">
+                  Project images & screenshots coming soon.
+                </p>
+              </div>
+            </div>
+          )}
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }
