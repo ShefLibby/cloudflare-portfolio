@@ -8,6 +8,7 @@
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
+    "deploy": "npm run build && node -e \"const{cpSync,mkdirSync,writeFileSync}=require('fs');mkdirSync('dist/deploy/assets',{recursive:true});cpSync('dist/server/assets','dist/deploy/assets',{recursive:true});cpSync('dist/client/assets','dist/deploy/assets',{recursive:true});cpSync('dist/server/server.js','dist/deploy/server.js');cpSync('dist/client/_redirects','dist/deploy/_redirects');writeFileSync('dist/deploy/_worker.js','export { default } from \\\"./server.js\\\";');\" && npx wrangler pages deploy dist/deploy --project-name=libby-portfolio --branch=main --commit-dirty=true",
     "lint": "eslint .",
     "format": "prettier --write ."
   },
