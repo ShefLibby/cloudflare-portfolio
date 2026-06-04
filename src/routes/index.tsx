@@ -75,34 +75,74 @@ const PROJECTS = [
       "Windows Forms apps built in Visual Studio with event-driven logic, input validation, and performance debugging.",
     tags: ["C#", ".NET", "Visual Studio", "WinForms"],
     accent: "from-sky-400/30 to-indigo-500/20",
+    role: "Developer • Coursework + independent practice",
+    timeline: "Spring 2024 – Present",
+    details: [
+      "Built several Windows Forms applications in C# focused on data entry, validation, and small business workflows.",
+      "Practiced clean event-driven patterns: separating UI events from business logic, writing reusable validation helpers, and handling exceptions gracefully.",
+      "Used the Visual Studio debugger and performance profiler to step through code, inspect call stacks, and tighten slow loops.",
+    ],
+    highlights: ["Event-driven architecture", "Form validation", "Exception handling", "Debugger / profiler"],
   },
   {
     title: "SQL Coffee Shop Database",
     blurb:
-      "Relational DB for a coffee shop — menu, rewards, transactions. Normalized to BCNF with complex queries and integrity constraints.",
+      "Relational database for a fictional coffee shop — menu, rewards, and transactions modeled end to end.",
     tags: ["SQL", "DB Design", "BCNF"],
     accent: "from-amber-300/30 to-rose-400/20",
+    role: "Database designer • Team of 3",
+    timeline: "Fall 2024",
+    details: [
+      "Designed an ER diagram covering customers, menu items, orders, payments, and a loyalty rewards program, then normalized the schema to BCNF.",
+      "Wrote DDL for tables, primary/foreign keys, and check constraints, plus seed data scripts for realistic testing.",
+      "Built queries for daily sales summaries, top-selling items, rewards point balances, and customer retention reporting.",
+    ],
+    highlights: ["ER modeling", "Normalization to BCNF", "Joins + aggregates", "Referential integrity"],
   },
   {
     title: "IT Infrastructure Proposal",
     blurb:
-      "End-to-end IT upgrade for a medical practice — RAID-10 backup, Citrix remote access, and Epic EHR integration.",
+      "End-to-end IT upgrade plan for a medical practice — backups, remote access, and EHR integration.",
     tags: ["IT Infra", "Systems Analysis", "Docs"],
     accent: "from-emerald-300/30 to-cyan-400/20",
+    role: "Systems analyst • Team of 4",
+    timeline: "Winter 2025",
+    details: [
+      "Analyzed the existing network, workstations, and clinical workflow at a small medical practice to identify reliability and compliance gaps.",
+      "Recommended a RAID-10 backup server, a Citrix-based remote access layer for clinicians, and integration paths into the Epic EHR.",
+      "Documented the rollout in a phased implementation plan with cost estimates, risk callouts, and a training outline for staff.",
+    ],
+    highlights: ["RAID-10 backups", "Citrix remote access", "Epic EHR integration", "Phased rollout plan"],
   },
   {
     title: "Forward Fitness Club Website",
     blurb:
-      "Responsive fitness site using HTML5/CSS3 — Grid + Flexbox, multi-viewport nav, W3C valid and accessible.",
+      "Responsive marketing site for a fictional fitness club built from scratch in HTML5 and CSS3.",
     tags: ["HTML5", "CSS3", "Responsive", "a11y"],
     accent: "from-fuchsia-300/30 to-violet-400/20",
+    role: "Front-end developer • Solo",
+    timeline: "Fall 2023",
+    details: [
+      "Built a multi-page site using semantic HTML5 and a CSS Grid + Flexbox layout that holds up from phone to desktop.",
+      "Implemented a responsive navigation that collapses on small screens, plus consistent typography and spacing across pages.",
+      "Validated the markup against W3C and checked color contrast and alt text for basic accessibility.",
+    ],
+    highlights: ["Semantic HTML5", "Grid + Flexbox", "Mobile-first", "W3C valid"],
   },
   {
     title: "Portfolio Website",
     blurb:
-      "This portfolio — semantic HTML, mobile-first design, scroll-reveal animations, and a clean professional UI.",
+      "This site — handwritten markup, mobile-first layout, and small touches of motion.",
     tags: ["HTML5", "CSS3", "JavaScript"],
     accent: "from-blue-300/30 to-teal-400/20",
+    role: "Designer + developer • Solo",
+    timeline: "2025",
+    details: [
+      "Designed the layout around a single hero image and a clear path through About, Skills, Projects, Experience, and Contact.",
+      "Used CSS Grid, custom properties, and small JavaScript helpers for the scroll-reveal animations and expanding project cards.",
+      "Kept the markup semantic and the page weight low so it loads quickly on a phone.",
+    ],
+    highlights: ["Custom layout", "Scroll-reveal", "Accessible markup", "Lightweight"],
   },
 ];
 
