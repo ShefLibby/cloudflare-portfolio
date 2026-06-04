@@ -516,9 +516,6 @@ function Portfolio() {
                 </div>
               </button>
             ))}
-                </div>
-              </article>
-            ))}
           </div>
         </div>
       </section>
