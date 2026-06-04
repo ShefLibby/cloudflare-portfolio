@@ -21,6 +21,7 @@ import {
   Database,
   Wrench,
   Briefcase,
+  Bot,
 } from "lucide-react";
 
 export const Route = createFileRoute("/")({
@@ -53,6 +54,11 @@ const SKILLS = [
     icon: Wrench,
     title: "Tools & Platforms",
     items: ["Visual Studio", "Linux", "MS Excel", "Office 365", "MS Teams"],
+  },
+  {
+    icon: Bot,
+    title: "AI Tools",
+    items: ["Claude", "ChatGPT", "Lovable"],
   },
   {
     icon: Database,
