@@ -3,6 +3,12 @@ import { useEffect, useState } from "react";
 import libbyImg from "@/assets/libby.png";
 import { useReveal } from "@/hooks/use-reveal";
 import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import {
   ArrowDown,
   ArrowUpRight,
   Github,
@@ -11,7 +17,6 @@ import {
   Phone,
   MapPin,
   GraduationCap,
-  Sparkles,
   Code2,
   Database,
   Wrench,
