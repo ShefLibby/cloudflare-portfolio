@@ -281,6 +281,12 @@ function Portfolio() {
                   src={libbyImg}
                   alt="Libby Shefferly"
                   className="relative w-[280px] sm:w-[340px] lg:w-[380px] drop-shadow-[0_30px_60px_rgba(0,0,0,0.4)]"
+                  style={{
+                    WebkitMaskImage:
+                      "linear-gradient(to bottom, black 65%, transparent 100%)",
+                    maskImage:
+                      "linear-gradient(to bottom, black 65%, transparent 100%)",
+                  }}
                 />
               </div>
             </div>
