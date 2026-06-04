@@ -14,7 +14,6 @@ import {
   Github,
   Linkedin,
   Mail,
-  Phone,
   MapPin,
   GraduationCap,
   Code2,
@@ -598,12 +597,6 @@ function Portfolio() {
                     label: "Email",
                     value: "libbyshefferly@gmail.com",
                     href: "mailto:libbyshefferly@gmail.com",
-                  },
-                  {
-                    Icon: Phone,
-                    label: "Phone",
-                    value: "(313) 515-4807",
-                    href: "tel:13135154807",
                   },
                   {
                     Icon: Linkedin,
