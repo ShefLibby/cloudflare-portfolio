@@ -166,6 +166,7 @@ const EXPERIENCE = [
 function Portfolio() {
   const ref = useReveal<HTMLDivElement>();
   const [scrolled, setScrolled] = useState(false);
+  const [openProject, setOpenProject] = useState<number | null>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
