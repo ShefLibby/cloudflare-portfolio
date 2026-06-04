@@ -4,6 +4,9 @@ on:
   push:
     branches: [main]
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -20,10 +23,13 @@ jobs:
           bun-version: latest
 
       - name: Install dependencies
-        run: bun install --frozen-lockfile
+        run: bun install
 
       - name: Build
         run: bun run build
+
+      - name: Show build output
+        run: find .output -type f | sort || echo "No .output directory found"
 
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
