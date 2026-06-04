@@ -242,9 +242,9 @@ function Portfolio() {
               GVSU • Detroit, MI
             </span>
             <h1 className="mt-6 text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.02]">
-              Hi, I'm <span className="text-gradient">Libby</span>.
+              <span className="text-gradient">Libby Shefferly</span>,
               <br />
-              I build clean, useful systems.
+              delivering business outcomes with tech.
             </h1>
             <p className="mt-6 text-lg text-white/75 max-w-xl">
               Information Systems student & aspiring IT professional. I work
