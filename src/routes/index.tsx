@@ -327,21 +327,34 @@ function Portfolio() {
 
       {/* ABOUT */}
       <section id="about" className="py-28 px-6">
-        <div className="mx-auto max-w-6xl grid lg:grid-cols-[0.9fr_1.1fr] gap-14 items-center">
+        <div className="mx-auto max-w-6xl grid lg:grid-cols-[0.85fr_1.15fr] gap-14 items-center">
           <div className="reveal-up relative order-2 lg:order-1">
             <div
               className="absolute -inset-6 rounded-[2rem] -z-10"
               style={{
                 background:
-                  "linear-gradient(135deg, oklch(0.78 0.16 235 / 0.18), oklch(0.82 0.16 85 / 0.18))",
+                  "linear-gradient(135deg, oklch(0.78 0.16 235 / 0.15), oklch(0.82 0.16 85 / 0.15))",
               }}
             />
-            <div className="relative rounded-[2rem] overflow-hidden bg-secondary p-6 sm:p-10 shadow-card">
-              <img
-                src={libbyImg}
-                alt="Libby Shefferly"
-                className="w-full max-w-md mx-auto"
-              />
+            <div className="relative rounded-[2rem] border border-border bg-card p-8 sm:p-10 shadow-card">
+              <p className="font-display text-3xl leading-snug">
+                <span className="text-accent">“</span>
+                I like the part of tech where someone's day actually gets easier
+                — a faster form, a query that finally returns what they
+                expected, a system that just works.
+                <span className="text-accent">”</span>
+              </p>
+              <div className="mt-8 flex items-center gap-3 pt-6 border-t border-border">
+                <div className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground font-display font-semibold">
+                  LS
+                </div>
+                <div>
+                  <p className="text-sm font-semibold">Libby Shefferly</p>
+                  <p className="text-xs text-muted-foreground">
+                    Information Systems · GVSU
+                  </p>
+                </div>
+              </div>
             </div>
             <div className="absolute -bottom-6 -right-4 sm:right-6 glass border border-border rounded-2xl px-5 py-4 shadow-card">
               <div className="flex items-center gap-3">
