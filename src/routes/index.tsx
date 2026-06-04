@@ -478,9 +478,11 @@ function Portfolio() {
 
           <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {PROJECTS.map((p, i) => (
-              <article
+              <button
                 key={p.title}
-                className="reveal-up group relative rounded-3xl border border-border bg-card p-7 shadow-card overflow-hidden hover:-translate-y-1 transition"
+                type="button"
+                onClick={() => setOpenProject(i)}
+                className="reveal-up group relative text-left rounded-3xl border border-border bg-card p-7 shadow-card overflow-hidden hover:-translate-y-1 transition cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
               >
                 <div
                   className={`absolute -top-20 -right-20 h-44 w-44 rounded-full blur-3xl opacity-70 bg-gradient-to-br ${p.accent}`}
@@ -490,7 +492,10 @@ function Portfolio() {
                     <span className="text-xs text-muted-foreground font-mono">
                       0{i + 1}
                     </span>
-                    <ArrowUpRight className="size-4 text-muted-foreground group-hover:text-accent group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition" />
+                    <span className="text-[10px] uppercase tracking-wider text-muted-foreground group-hover:text-accent transition flex items-center gap-1">
+                      View
+                      <ArrowUpRight className="size-3.5 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition" />
+                    </span>
                   </div>
                   <h3 className="mt-4 text-xl font-semibold leading-snug">
                     {p.title}
@@ -508,6 +513,9 @@ function Portfolio() {
                       </span>
                     ))}
                   </div>
+                </div>
+              </button>
+            ))}
                 </div>
               </article>
             ))}
