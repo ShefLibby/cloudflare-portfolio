@@ -252,7 +252,7 @@ function Portfolio() {
               efficient, accessible, and people-centered.
             </p>
             <p className="mt-2 text-sm text-white/55">
-              B.S. Management of Information Systems • Expected Dec 2027
+              B.S. Management of Information Systems • Expected May 2027
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a
@@ -399,7 +399,7 @@ function Portfolio() {
             <div className="reveal-up mt-8 grid grid-cols-2 sm:grid-cols-4 gap-4">
               {[
                 { k: "GPA", v: "3.2" },
-                { k: "Grad", v: "Dec 2027" },
+                { k: "Grad", v: "May 2027" },
                 { k: "Location", v: "Allendale, MI" },
                 { k: "Honors", v: "Dean's ×2" },
               ].map((s) => (
@@ -578,7 +578,7 @@ function Portfolio() {
               </span>
               <h2 className="mt-3 text-4xl sm:text-5xl font-bold max-w-2xl">
                 Looking for an IT internship in{" "}
-                <span className="text-gradient">2025 – 2026</span>.
+                <span className="text-gradient">2026 – 2027</span>.
               </h2>
               <p className="mt-5 max-w-xl text-white/75">
                 Have a question, an opportunity, or just want to connect? I'd
@@ -590,8 +590,8 @@ function Portfolio() {
                   {
                     Icon: Mail,
                     label: "Email",
-                    value: "shefferl@mail.gvsu.edu",
-                    href: "mailto:shefferl@mail.gvsu.edu",
+                    value: "libbyshefferly@gmail.com",
+                    href: "mailto:libbyshefferly@gmail.com",
                   },
                   {
                     Icon: Phone,
@@ -666,7 +666,7 @@ function Portfolio() {
               GitHub
             </a>
             <a
-              href="mailto:shefferl@mail.gvsu.edu"
+              href="mailto:libbyshefferly@gmail.com"
               className="hover:text-foreground"
             >
               Email
