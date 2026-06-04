@@ -238,7 +238,7 @@ function Portfolio() {
         <div className="relative z-10 mx-auto max-w-6xl px-6 pt-32 pb-24 grid lg:grid-cols-[1.2fr_0.8fr] gap-12 items-center">
           <div className="reveal-up">
             <span className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-white/70 border border-white/20 rounded-full px-3 py-1.5">
-              <Sparkles className="size-3.5" />
+              <span className="h-1.5 w-1.5 rounded-full bg-accent" />
               GVSU • Detroit, MI
             </span>
             <h1 className="mt-6 text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.02]">
