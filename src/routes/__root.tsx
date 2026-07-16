@@ -79,6 +79,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:title", content: "Libby Shefferly | Portfolio" },
       { property: "og:description", content: "Information Systems student at GVSU." },
       { property: "og:type", content: "website" },
+      { property: "og:image", content: "https://libby-portfolio.pages.dev/assets/libby-44e-i8av.png" },
+      { property: "og:url", content: "https://libby-portfolio.pages.dev/" },
       { name: "twitter:card", content: "summary" },
     ],
     links: [
